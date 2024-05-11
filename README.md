@@ -189,16 +189,16 @@ and finally to ZeroMQ.
 
 ```mermaid
 flowchart LR
-    RabbitMQ(RabbitMQ) -->|Sends message to| Bridge(Bridge Script)
-    Bridge -->|Forwards message to| ZeroMQ(ZeroMQ)
-    ZeroMQ -->|Distributes message to| Consumers(Consumers)
+    R(RabbitMQ) -->|sends message| B(Bridge)
+    B -->|transfers message| Z(ZeroMQ)
+    Z -->|distributes message| C[Consumers]
 
-    classDef default fill:#ddd,stroke:#333,stroke-width:2px;
-    classDef mq fill:#79a,stroke:#333,stroke-width:4px;  /* Updated color for RabbitMQ and ZeroMQ */
-    classDef bridge fill:#fac,stroke:#333,stroke-width:4px;  /* Updated color for Bridge */
-    class RabbitMQ,ZeroMQ mq;
-    class Bridge bridge;
-
+    classDef rabbit fill:#f96,stroke:#333,stroke-width:2px;
+    classDef bridge fill:#bbf,stroke:#333,stroke-width:2px;
+    classDef zero fill:#9f6,stroke:#333,stroke-width:2px;
+    class R rabbit;
+    class B bridge;
+    class Z zero;
 ```
 
 ## Conclusion
