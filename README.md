@@ -193,12 +193,12 @@ flowchart LR
     Bridge -->|Forwards message to| ZeroMQ(ZeroMQ)
     ZeroMQ -->|Distributes message to| Consumers(Consumers)
 
-    classDef default fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef mq fill:#ccf,stroke:#333,stroke-width:4px;
-    classDef bridge fill:#cfc,stroke:#333,stroke-width:4px;
-    classDef zmq fill:#fcc,stroke:#333,stroke-width:4px;
+    classDef default fill:#ddd,stroke:#333,stroke-width:2px;
+    classDef mq fill:#79a,stroke:#333,stroke-width:4px;  /* Updated color for RabbitMQ and ZeroMQ */
+    classDef bridge fill:#fac,stroke:#333,stroke-width:4px;  /* Updated color for Bridge */
     class RabbitMQ,ZeroMQ mq;
     class Bridge bridge;
+
 ```
 
 ## Conclusion
