@@ -5,7 +5,7 @@
 - Author: Hsi-Chun Wang
 - GitHub account: stevenwang415
 - UMD email: stevenw@umd.edu
-- Personal email: stevenw@umd.edu
+- Personal email: hsichunw@gmail.com
 
 ## Description
 
